@@ -1,0 +1,27 @@
+<nav class="banner">
+    <h1></h1>
+    <h1 class="header-text">VALIDA x IRCC</h1>
+    <button class="sign-out-btn" (click)=signOut()>Sign Out</button>
+</nav>
+
+<div class="main-container">
+    <div class="upload-container">
+
+        <div class="file-upload-container">
+            <h1 class="upload-header">Upload Documents for Fraud Detection</h1>
+            <label for="fileInput">Choose File(s)</label>
+            <input type="file" id="fileInput" (change)="onFileSelected($event)" style="display: none">
+            <button class="button1" (click)="openFileInput()">Upload Files</button>
+            <p class="upload-paragraph">Document results will be provided below once documents are uploaded</p>
+        </div>
+
+    </div>
+    <div class="file-detail-container">
+        <div class="file-detail" *ngFor="let file of selectedFiles"
+            [ngStyle]="{'background-color': file.size > 2097152 ? 'green' : 'red'}">
+            {{ file.name }} ({{ file.size / 1024 /1024 | number: '1.2' }} MB)
+        </div>
+    </div>
+
+
+</div>

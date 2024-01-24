@@ -1,0 +1,25 @@
+<div class="background">
+    <h1 class="main-text">Welcome to Valida x IRCC </h1>
+    <div class="container">
+        <div class="center">
+            <h1>Login</h1>
+            <form (submit)="signIn()">
+                <div class="txt_field">
+                    <input type="text" id="username" [(ngModel)]="username" name="username" required>
+                    <span></span>
+                    <label>Username</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" id="password" [(ngModel)]="password" name="password" required>
+                    <span></span>
+                    <label>Password</label>
+                </div>
+                <br>
+                <button type="submit" class="sign-in-btn">Sign In</button>
+                <div class="signup_link">
+                    No Login ? <a href="#">Contact Emerging Tech Team</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,163 @@
+.banner {
+    display: flex;
+    background-color: #11294d;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 10px;
+    font-weight: bold;
+    justify-content: space-between;
+    align-items: center;
+    /* Center items vertically */
+}
+
+.header-text {
+    margin: 0;
+    /* Remove default margin to ensure text is centered */
+}
+
+.sign-out-btn {
+
+    background: #FF4742;
+    border: 1px solid #FF4742;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: nunito, roboto, proxima-nova, "proxima nova", sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 16px;
+    min-height: 40px;
+    outline: 0;
+    padding: 12px 14px;
+    text-align: center;
+    text-rendering: geometricprecision;
+    text-transform: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: middle;
+}
+
+.sign-out-btn:hover {
+    background-color: initial;
+    background-position: 0 0;
+    color: #FF4742;
+}
+
+
+
+
+/* .main-container */
+.main-container {
+    display: block;
+    height: 100vh;
+
+    margin: 0 auto;
+    background-color: #000405;
+}
+
+/* .upload-container */
+.upload-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0 120px;
+}
+
+/* button */
+button {
+    cursor: pointer;
+}
+
+/* .file-detail-container */
+.file-detail-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Adjust as needed */
+}
+
+/* .file-detail */
+.file-detail {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: white;
+    flex: 0 0 calc(30% - 40px);
+    /* Adjust the width as needed */
+    transition: background 0.3s ease-in-out;
+    background: linear-gradient(to right, #006400, #004d00);
+}
+
+/* Hover effect */
+.file-detail:hover {
+    background: linear-gradient(to right, #008000, #006400);
+}
+
+/* .file-upload-container */
+.file-upload-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+/* label, input, button */
+label,
+input,
+button {
+    margin: 10px;
+}
+
+/* .button1 */
+.button1 {
+    background-color: #c2fbd7;
+    border-radius: 100px;
+    box-shadow: rgba(44, 187, 99, .2) 0 -25px 18px -14px inset, rgba(44, 187, 99, .15) 0 1px 2px, rgba(44, 187, 99, .15) 0 2px 4px, rgba(44, 187, 99, .15) 0 4px 8px, rgba(44, 187, 99, .15) 0 8px 16px, rgba(44, 187, 99, .15) 0 16px 32px;
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    font-family: CerebriSans-Regular, -apple-system, system-ui, Roboto, sans-serif;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 250ms;
+    border: 0;
+    font-size: 16px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+/* .button1:hover */
+.button1:hover {
+    box-shadow: rgba(44, 187, 99, .35) 0 -25px 18px -14px inset, rgba(44, 187, 99, .25) 0 1px 2px, rgba(44, 187, 99, .25) 0 2px 4px, rgba(44, 187, 99, .25) 0 4px 8px, rgba(44, 187, 99, .25) 0 8px 16px, rgba(44, 187, 99, .25) 0 16px 32px;
+    transform: scale(1.05) rotate(-1deg);
+}
+
+
+
+/* .upload-header */
+.upload-header {
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+    font-size: 3vw;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+}
+
+/* .upload-paragraph */
+.upload-paragraph {
+    color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
